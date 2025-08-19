@@ -116,6 +116,11 @@ export EDITOR='nvim'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+bindkey "^[[1;3D" backward-word     # Option + Left
+bindkey "^[[1;3C" forward-word      # Option + Right
+bindkey "^[[1;9D" beginning-of-line # Command + Left
+bindkey "^[[1;9C" end-of-line       # Command + Right
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
