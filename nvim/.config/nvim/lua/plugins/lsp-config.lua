@@ -14,6 +14,7 @@ return {
           "ts_ls",
           "volar",
           "tailwindcss",
+          "pylsp",
         },
       })
     end,
@@ -63,6 +64,10 @@ return {
       })
 
       lspconfig.tailwindcss.setup({
+        capabilities = capabilities
+      })
+
+      lspconfig.pylsp.setup({
         capabilities = capabilities
       })
 
