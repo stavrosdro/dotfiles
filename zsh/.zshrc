@@ -118,8 +118,8 @@ export EDITOR='nvim'
 
 bindkey "^[[1;3D" backward-word     # Option + Left
 bindkey "^[[1;3C" forward-word      # Option + Right
-bindkey "^[[1;9D" beginning-of-line # Command + Left
-bindkey "^[[1;9C" end-of-line       # Command + Right
+bindkey "^[[1;5D" beginning-of-line # Control + Left
+bindkey "^[[1;5C" end-of-line       # Control + Right
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
