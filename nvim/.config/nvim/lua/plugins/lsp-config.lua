@@ -34,7 +34,6 @@ return {
         capabilities = capabilities,
       })
 
-      --[[
       lspconfig.ts_ls.setup({
         capabilities = capabilities,
         init_options = {
@@ -50,13 +49,11 @@ return {
         filetypes = {
           "javascript",
           "typescript",
-          "vue",
         },
         -- init_options = { hostInfo = 'neovim' },
         -- cmd = { 'typescript-language-server', '--stdio' },
         -- root_dir = lspconfig.util.root_pattern('tsconfig.json', 'jsconfig.json', 'package.json', '.git'),
       })
-      ]] --
 
       lspconfig.volar.setup({
         capabilities = capabilities,
