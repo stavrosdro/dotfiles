@@ -49,6 +49,7 @@ return {
         filetypes = {
           "javascript",
           "typescript",
+          -- "vue",
         },
         -- init_options = { hostInfo = 'neovim' },
         -- cmd = { 'typescript-language-server', '--stdio' },
@@ -57,7 +58,7 @@ return {
 
       lspconfig.volar.setup({
         capabilities = capabilities,
-        filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+        filetypes = {  'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
         init_options = {
           vue = {
             hybridMode = false,
